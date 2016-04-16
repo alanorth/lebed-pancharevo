@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<title>Lebed Restaurant in Pancharevo, Bulgaria</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/writ.min.css">
+
+<style>
+#panorama, #panorama2 {
+	width: 600px;
+	height: 400px;
+}
+</style>
+
+<!-- Pannellum -->
+<script src="/scripts/pannellum.js"></script>
+<link rel="stylesheet" href="/css/pannellum.css">
+
+<header>
+  <h1>Lebed Restaurant in Pancharevo, Bulgaria</h1>
+  <p>A quick look at the <a href="http://restaurantlebed.com/en/" title="Lebed restaurant website">Лебед Restaurant</a> from some awesome 360-degree panoramas I took today (it won't work on your phone, too high res!).</p>
+</header>
+
+<main>
+
+<h2>Ceremony Area</h2>
+<p>There is this area near the lake that they said you can use for the ceremony.</p>
+<div id="panorama"></div>
+
+<h2>Garden Restaurant Area</h2>
+<p>The outside garden is really beautiful for eating.</p>
+<div id="panorama2"></div>
+
+<script>
+pannellum.viewer('panorama', {
+    "author": "Alan Orth",
+    "type": "equirectangular",
+    "panorama": "images/PANO_20160416_135346.jpg",
+    "autoLoad": "true"
+});
+
+pannellum.viewer('panorama2', {
+    "author": "Alan Orth",
+    "type": "equirectangular",
+    "panorama": "images/PANO_20160416_134753.jpg",
+    "autoLoad": "true"
+});
+</script>
+
+<h2>Happy Birthday, Nick!</h2>
+<p>Oh, and happy birthday, Nick! I wish you a long and happy life. Luckily your best years are still ahead of you!</p>
+</main>
+
+<!-- vim: set ts=2 sw=2: -->
